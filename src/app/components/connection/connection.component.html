@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <h3>BE payload data</h3>
+  <div class="data-container">
+    @if (jsonData().id == null) {
+      <p>Cant get BE payload</p>
+      <p>Check if MedicalSurveysBE is running</p>
+    }
+    <p>Id: {{jsonData().id}}</p>
+    <p>Name: {{jsonData().name}}</p>
+    <p>Email: {{jsonData().email}}</p>
+    <p>Active: {{jsonData().active}}</p>
+  </div>
+</div>
+
+
+
